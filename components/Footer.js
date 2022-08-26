@@ -119,7 +119,7 @@ const Footer = () => {
               </Link>
             </li>
           </ul>
-          <Link href="/donate">
+          <Link href="/donation">
             <a className="py-2 px-4 border border-orange-500 text-center mt-5 text-orange-500 font-bold w-full md:w-2/3 rounded">Donate</a>
           </Link>
         </div>

@@ -197,7 +197,7 @@ const Header = () => {
             </ul>
           </div>
         </div>
-        <div className="callUs text-white bg-orange-600 px-5 py-2 rounded border border-orange-600 hover:bg-white hover:text-orange-600">
+        <div className="callUs text-white bg-orange-600 px-5 py-2 rounded border border-orange-600 hover:bg-white hover:text-orange-600 transition duration-300">
           <a href="tel:+">Call Us</a>
         </div>
       </div>

@@ -17,7 +17,7 @@ const ourStory = () => {
           </div>
           {/* Contents */}
           <div className="text col-span-2 text-center md:text-left md:ml-10">
-            <p className="md:text-xl text-gray-500 mb-5">Our organisation was formed in 2009 by a group of old boys from the graduating (GCE Advanced Level) class of 1987 at St John's College, Jaffna with the sole purpose of helping the most vulnerable in our community affected by the civil war. This explains the name SJC87 initiative!</p>
+            <p className="md:text-xl text-gray-500 mb-5">Our organisation was formed in 2009 by a group of old boys from the graduating (GCE Advanced Level) class of 1987 at St John&apos;s College, Jaffna with the sole purpose of helping the most vulnerable in our community affected by the civil war. This explains the name SJC87 initiative!</p>
             <p className="md:text-xl text-gray-500 mb-5">The work of SJC87initiative is not confined to an area or to an institution. Our work is spread across several districts. We work in all needy areas of the North and East of Sri Lanka.</p>
             <p className="md:text-xl text-gray-500 mb-5">We started our first educational excellence project at Tharmapuram Central College, formerly known as Tharmapuram Maha Vidyalayam, In Kilinochchi.</p>
           </div>

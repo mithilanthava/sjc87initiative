@@ -88,7 +88,7 @@ const ourImpact = () => {
               <div className="story grid grid-cols-1 md:grid-cols-2 md:gap-5 xl:gap-8 place-items-center ">
                 <div className="story_content text-center md:text-right mb-5 md:mb-0">
                   <h3 className="text-2xl md:text-4xl font-extrabold text-orange-500 mb-5">KAJALINY THEVARAJAN</h3>
-                  <p className="text-xl md:text-2xl font-light text-gray-500">She has been in our sponsorship program since 2011. She is very talented in Art and Handicrafts. Her recent artwork has gotten into the magazine called "Ullam". </p>
+                  <p className="text-xl md:text-2xl font-light text-gray-500">She has been in our sponsorship program since 2011. She is very talented in Art and Handicrafts. Her recent artwork has gotten into the magazine called &quot;Ullam&quot;. </p>
                 </div>
                 <div className="story_img w-full sm:w-[350px] h-[450px]">
                   <img src="/img/ourImpact/s1.jpg" alt="KAJALINY THEVARAJAN"  className="w-full h-full object-cover/top rounded-xl"/>

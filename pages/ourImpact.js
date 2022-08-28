@@ -15,9 +15,13 @@ const ourImpact = () => {
         <title>Our Impact</title>
       </Head>
       <div>
+
+        {/* Banner */}
         <div className="banner relative h-96 w-full">
           <img src="/img/ourImpact/banner.jpg" alt="Banner" className="h-full w-full object-cover brightness-50 rounded-b-3xl" />
         </div>
+
+        {/* Main Container */}
         <div className="container">
           <h2 className="text-2xl md:text-4xl xl:text-6xl font-extrabold text-orange-500 text-center my-10">Our Impact since inception</h2>
 

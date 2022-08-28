@@ -18,7 +18,7 @@ const ourImpact = () => {
 
         {/* Banner */}
         <div className="banner relative h-96 w-full">
-          <img src="/img/ourImpact/banner.jpg" alt="Banner" className="h-full w-full object-cover brightness-50 rounded-b-3xl" />
+          <img src="/img/ourImpact/banner.JPG" alt="Banner" className="h-full w-full object-cover brightness-50 rounded-b-3xl" />
         </div>
 
         {/* Main Container */}

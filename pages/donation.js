@@ -11,13 +11,13 @@ const donation = () => {
 
       {/* Banner */}
       <div className="banner relative h-96 w-full">
-        <img src="/img/donation/banner.jpg" alt="Banner" className="h-full w-full object-cover" />
+        <img src="/img/donation/banner.jpg" alt="Banner" className="h-full w-full object-cover brightness-50 rounded-b-3xl" />
         <div className="content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
           <h2 className="text-3xl md:text-6xl text-white font-extrabold mb-5">Donations</h2>
           <p className="text-white w-full md:text-2xl md:font-semibold">Apart from sponsorship and projects, our annual donation campaign involves selling calendars at nominal cost to raise funds for our operations and for projects</p>
         </div>
       </div>
-      <div className="container">
+      <div className="container mt-10">
         <h2 className="text-center py-5 font-bold text-gray-500 text-4xl">The following are your payment options in your country</h2>
 
         {/* Austraila */}

@@ -9,7 +9,7 @@ const contact = () => {
       </Head>
       <div className="container">
         <div className="contact">
-          <h2 className="heading mt-5 text-center text-6xl font-bold relative">Contact</h2>
+          <h2 className="heading mt-5 text-center text-6xl font-bold relative text-orange-500">Contact</h2>
 
           <h3 className="text-3xl text-center text-gray-600 font-semibold">Our Country Representative</h3>
           <div className="mt-10">

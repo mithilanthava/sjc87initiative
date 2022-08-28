@@ -151,8 +151,8 @@ const Header = () => {
                 </Link>
                 <ul className="dropdown-content absolute hidden text-gray-700 top-0 left-[100%] w-64">
                   <li>
-                    <Link href="/activities/ictProjects/facilitiesToStudents">
-                      <a className="bg-gray-100 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap rounded-t">ICT Facilities to Students</a>
+                    <Link href="/activities/ictProjects/facilitiesToSchools">
+                      <a className="bg-gray-100 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap rounded-t">ICT Facilities to Schools</a>
                     </Link>
                   </li>
                   <li>
@@ -202,7 +202,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="mobile fixed w-full container top-0 left-0 md:hidden bg-white z-10">
+      <div className="fixed w-full px-5 top-0 left-0 md:hidden bg-white z-10">
         <div className="flex justify-between items-center">
           <div className="logo h-12 w-auto">
             <img src="/img/logo.png" alt="logo" className="h-full" />

@@ -13,7 +13,7 @@ const Header = () => {
   
   return (
     <>
-      <div className="hidden desktop container md:flex justify-between items-center py-3">
+      <div className="hidden desktop px-5 sm:px-7 md:px-12 2xl:px-20 lg:flex justify-between items-center py-3">
         <div className="logo h-14 w-auto">
           <Link href="/">
             <a>
@@ -202,7 +202,7 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="fixed w-full px-5 top-0 left-0 md:hidden bg-white z-10">
+      <div className="fixed w-full px-5 top-0 left-0 lg:hidden bg-white z-10">
         <div className="flex justify-between items-center">
           <div className="logo h-12 w-auto">
             <img src="/img/logo.png" alt="logo" className="h-full" />

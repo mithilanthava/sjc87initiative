@@ -42,7 +42,7 @@ const schoolStudentsAdvance = () => {
                 {
                   imgData.map(item => (
                     <div className="w-full h-full" key={item}>
-                      <img src={item} alt="Ordinary level image" className="w-full md:h-[180px] object-cover rounded-lg"/>
+                      <img src={item} alt="Advance level image" className="w-full md:h-[180px] object-cover rounded-lg"/>
                     </div>
 
                   ))

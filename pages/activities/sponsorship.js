@@ -76,17 +76,30 @@ const sponsorship = () => {
             <ScholarshipCard />
           </div>
 
-          {/* Image Gallery  */}
-          <div className="my-16">
-            <div className="w-full flex justify-center items-center ">
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3  gap-5 w-full">
-                {
-                  imgData.map(item => (
-                    <div className="w-full h-full" key={item}>
-                      <img src={item} alt="Sponsorship image" className="w-full md:h-[280px] object-cover rounded-lg"/>
-                    </div>
-                  ))
-                }
+          {/* The Feature Stories */}
+          <div className="mt-10">
+            <h2 className="text-center text-4xl text-gray-500 font-semibold mb-5">Featured Stories</h2>
+            <div className="imgGroup grid grid-cols-1 items-center md:grid-cols-3 space-y-5 md:space-y-0">
+              <div className="feature w-full h-[500px] xl:w-[300px] xl:h-[300px] 2xl:w-[400px] 2xl:h-[400px] relative rounded border">
+                <img src="/img/index/f1.jpg" alt="Feature Image 1" className=" object-cover h-full w-full rounded"/>
+                <div className="featureText absolute left-0 bottom-0 bg-white/90 w-full py-2 px-5 rounded-b">
+                  <p className="text-gray-600/80 text-xl font-semibold">Featured Story</p>
+                  <p className="text-orange-500 text-xl font-semibold">Kisushanty Sellathurai</p>
+                </div>
+              </div>
+              <div className="feature w-full h-[500px] xl:w-[300px] xl:h-[300px] 2xl:w-[400px] 2xl:h-[400px] relative rounded border">
+                <img src="/img/index/f2.jpg" alt="Feature Image 1" className=" object-cover h-full w-full rounded"/>
+                <div className="featureText absolute left-0 bottom-0 bg-white/90 w-full py-2 px-5 rounded-b">
+                  <p className="text-gray-600/80 text-xl font-semibold">Featured Story</p>
+                  <p className="text-orange-500 text-xl font-semibold">Kisushanty Sellathurai</p>
+                </div>
+              </div>
+              <div className="feature w-full h-[500px] xl:w-[300px] xl:h-[300px] 2xl:w-[400px] 2xl:h-[400px] relative rounded border">
+                <img src="/img/index/f3.jpg" alt="Feature Image 1" className=" object-cover h-full w-full rounded"/>
+                <div className="featureText absolute left-0 bottom-0 bg-white/90 w-full py-2 px-5 rounded-b">
+                  <p className="text-gray-600/80 text-xl font-semibold">Featured Story</p>
+                  <p className="text-orange-500 text-xl font-semibold">Kisushanty Sellathurai</p>
+                </div>
               </div>
             </div>
           </div>

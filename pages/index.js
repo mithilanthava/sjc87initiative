@@ -110,7 +110,7 @@ export default function Home() {
 
         {/* The Feature Stories */}
         <div className="container mt-10">
-          <h2 className="text-center text-4xl text-gray-500 font-semibold mb-5">Feature Stories</h2>
+          <h2 className="text-center text-4xl text-gray-500 font-semibold mb-5">Featured Stories</h2>
           <div className="imgGroup grid grid-cols-1 items-center md:grid-cols-3 space-y-5 md:space-y-0">
             <div className="feature w-full h-[500px] xl:w-[300px] xl:h-[300px] 2xl:w-[400px] 2xl:h-[400px] relative rounded border">
               <img src="/img/index/f1.jpg" alt="Feature Image 1" className=" object-cover h-full w-full rounded"/>

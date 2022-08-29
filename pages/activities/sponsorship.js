@@ -77,7 +77,7 @@ const sponsorship = () => {
           </div>
 
           {/* The Feature Stories */}
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <h2 className="text-center text-4xl text-gray-500 font-semibold mb-5">Featured Stories</h2>
             <div className="imgGroup grid grid-cols-1 items-center md:grid-cols-3 space-y-5 md:space-y-0">
               <div className="feature w-full h-[500px] xl:w-[300px] xl:h-[300px] 2xl:w-[400px] 2xl:h-[400px] relative rounded border">
@@ -102,7 +102,7 @@ const sponsorship = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </main>
     </div>

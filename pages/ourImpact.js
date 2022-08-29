@@ -55,7 +55,7 @@ const ourImpact = () => {
               </div>
               <div className="desc mt-5">
                 <p className="text-xl md:text-2xl font-semibold text-gray-600">50,000+</p>
-                <span className="font-extrabold text-orange-500 text-xl">Years on Ground</span>
+                <span className="font-extrabold text-orange-500 text-xl">Benifited</span>
                 <p className="text-2xl md:text-6xl font-extrabold text-gray-600">1500+</p>
                 <p className="font-extrabold text-orange-500 text-xl">Students Sponsorship</p>
               </div>

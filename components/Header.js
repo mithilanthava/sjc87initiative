@@ -23,6 +23,9 @@ const Header = () => {
         </div>
 
         <div className="links flex justify-center items-center space-x-4">
+          <Link href="/">
+            <a className="py-2 px-4 block whitespace-no-wrap">Home</a>
+          </Link>
           <div className="dropdown inline-block relative">
             <button className="text-gray-700 py-2 px-4 inline-flex items-center">
               <a>About Us &darr;</a>
@@ -56,7 +59,8 @@ const Header = () => {
               <a>Activities &darr;</a>
             </button>
             
-            <ul className='dropdown-content absolute hidden text-gray-700 pt-1 w-64'><li>
+            <ul className='dropdown-content absolute hidden text-gray-700 pt-1 w-64'>
+              <li>
                 <Link href="/activities">
                   <a className="rounded-t bg-gray-100 hover:bg-gray-400 py-2 px-4 block whitespace-no-wrap">Activities</a>
                 </Link>

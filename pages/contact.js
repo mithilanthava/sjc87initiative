@@ -24,11 +24,6 @@ const contact = () => {
               <tbody>
                 <tr className="h-14 border-b">
                   <td className="w-1/5 pl-4">Australia</td>
-                  <td className="w-2/5">Srithar Nagarajah</td>
-                  <td className="w-2/5">srithar.nagarajah69@gmail.com</td>
-                </tr>
-                <tr className="h-14 border-b">
-                  <td className="w-1/5 "></td>
                   <td className="w-2/5">Vijendra Vijayaratnam</td>
                   <td className="w-2/5">vijendra@sjc87scholarship.org</td>
                 </tr>

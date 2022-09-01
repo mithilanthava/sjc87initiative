@@ -1,7 +1,8 @@
 import React from 'react'
-import Head from 'next/head'
 import ScholarshipCard from '../../components/ScholarshipCard'
 import Line from '../../components/Line'
+import { NextSeo } from 'next-seo';
+
 
 
 const sponsorship = () => {
@@ -12,9 +13,12 @@ const sponsorship = () => {
   ]
   return (
     <div>
-      <Head>
-        <title>Sponsorship</title>
-      </Head>
+      <NextSeo
+        title="Sponsorship"
+        titleTemplate='SJC87INITIATIVE | Activities | %s'
+        description="SJC87 INITIATIVE is not for profit Education Initiative was formed in 2009, mainly to improve the Education standard in the North and East of Sri Lanka. It operates with slightly different names in Australia, Canada, Sri Lanka, UK and USA."
+        canonical='https://sjc87initiative.com'
+      />
 
       <main>
         {/* Banner */}

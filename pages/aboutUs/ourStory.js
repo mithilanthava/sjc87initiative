@@ -1,12 +1,15 @@
 import React from 'react'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo';
 
 const ourStory = () => {
   return (
     <div>
-      <Head>
-        <title>Our Story</title>
-      </Head>
+      <NextSeo
+        title="Our Story"
+        titleTemplate='SJC87INITIATIVE | %s'
+        description="SJC87 INITIATIVE is not for profit Education Initiative was formed in 2009, mainly to improve the Education standard in the North and East of Sri Lanka. It operates with slightly different names in Australia, Canada, Sri Lanka, UK and USA."
+        canonical='https://sjc87initiative.com'
+      />
 
       <div className="container">
         {/* Contents */}

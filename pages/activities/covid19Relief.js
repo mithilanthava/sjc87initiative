@@ -1,5 +1,6 @@
 import React from 'react'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo';
+
 
 import Cards from '../../components/Cards'
 
@@ -22,9 +23,12 @@ const covid19Relief = () => {
   ]
   return (
     <div>
-      <Head>
-        <title>Covid 19 Relief</title>
-      </Head>
+      <NextSeo
+        title="Covid 19 Relief"
+        titleTemplate='SJC87INITIATIVE | Activities | %s'
+        description="SJC87 INITIATIVE is not for profit Education Initiative was formed in 2009, mainly to improve the Education standard in the North and East of Sri Lanka. It operates with slightly different names in Australia, Canada, Sri Lanka, UK and USA."
+        canonical='https://sjc87initiative.com'
+      />
 
       <main>
         {/* Banner */}

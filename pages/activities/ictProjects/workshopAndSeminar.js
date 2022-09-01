@@ -1,5 +1,6 @@
 import React from 'react'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo';
+
 
 
 const workshopAndSeminar = () => {
@@ -18,9 +19,12 @@ const workshopAndSeminar = () => {
   ]
   return (
     <div>
-      <Head>
-        <title>ICT Workshop and Seminar</title>
-      </Head>
+      <NextSeo
+        title="Workshop and Seminar"
+        titleTemplate='SJC87INITIATIVE | ICT Projects | %s'
+        description="SJC87 INITIATIVE is not for profit Education Initiative was formed in 2009, mainly to improve the Education standard in the North and East of Sri Lanka. It operates with slightly different names in Australia, Canada, Sri Lanka, UK and USA."
+        canonical='https://sjc87initiative.com'
+      />
 
       {/* Banner */}
       <div className="banner relative h-96 w-full">

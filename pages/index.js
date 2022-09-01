@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
-
+import { NextSeo } from 'next-seo';
 // Swiper Js Imports
 import { Navigation, Pagination, Autoplay , A11y } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -26,11 +26,15 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>SJC87INITIATIVE</title>
-        <meta name="description" content="" />
-        {/* Change your Icon */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <NextSeo
+        title="Home"
+        titleTemplate='SJC87INITIATIVE | %s'
+        description="SJC87 INITIATIVE is not for profit Education Initiative was formed in 2009, mainly to improve the Education standard in the North and East of Sri Lanka. It operates with slightly different names in Australia, Canada, Sri Lanka, UK and USA."
+        canonical='https://sjc87initiative.com'
+      />
+        
 
       <main className="w-full">
 

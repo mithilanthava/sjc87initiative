@@ -1,5 +1,6 @@
 import React from 'react'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo';
+
 
 import {client} from '../lib/client'
 
@@ -7,9 +8,12 @@ import {client} from '../lib/client'
 const contact = ({contacts}) => {
   return (
     <>
-      <Head>
-        <title>Contact</title>
-      </Head>
+      <NextSeo
+        title="Contact"
+        titleTemplate='SJC87INITIATIVE | %s'
+        description="SJC87 INITIATIVE is not for profit Education Initiative was formed in 2009, mainly to improve the Education standard in the North and East of Sri Lanka. It operates with slightly different names in Australia, Canada, Sri Lanka, UK and USA."
+        canonical='https://sjc87initiative.com'
+      />
       <div className="container">
         <div className="contact">
           <h2 className="heading mt-5 text-center text-6xl font-bold relative text-orange-500">Contact</h2>

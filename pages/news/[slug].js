@@ -12,7 +12,7 @@ const NewsDetail = ({news, newsData}) => {
       <main>
         {/* Banner */}
         <div className="banner relative h-96 w-full">
-          <img src={urlFor(news.bannerImage)} alt="Banner" className="h-full w-full object-cover brightness-50 rounded-b-3xl" />
+          <img src={urlFor(news.bannerImage)} alt="Banner" className="h-full w-full object-cover brightness-50 rounded-b" />
           <div className="content absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
             <h2 className="text-3xl md:text-6xl text-white font-extrabold mb-5">{news.title}</h2>
             <p className="text-white w-full md:text-2xl md:font-semibold">{new Date(news._createdAt).toLocaleString()}</p>
@@ -20,13 +20,13 @@ const NewsDetail = ({news, newsData}) => {
         </div>
 
         <div className="px-5 md:px-10 lg:px-22 xl:px-36 2xl:px-96 my-12">
-          <div className="w-full h-3/4 mb-5">
-            <img src={urlFor(news.mainImage)} alt="Main Image" className="object-cover rounded" />
+          <div className="w-full h-[600px] mb-5">
+            <img src={urlFor(news.mainImage)} alt="Main Image" className="w-full h-full object-cover rounded" />
           </div>
           <p className="w-full text-md md:text-xl font-light text-gray-600 mb-5">{news.text}</p>
           {/* Gallery */}
           <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
-          {
+          {news.image &&
             news.image.map((i,index) => (
               <div key={index} className="w-full h-[200px] md:w-92">
                 <img src={urlFor(i)} alt="image" className="w-full h-full object-cover rounded"/>

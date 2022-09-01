@@ -22,12 +22,12 @@ const news = ({posts}) => {
 
       <main>
         <div className="container">
-          <div className="newsCards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-12">
+          <div className="newsCards grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 my-12">
             {
               posts.map((n) =>(
                 <div key={n._id}>
                   <Link href={`/news/${n.slug.current}`}>
-                    <div className="newsCard w-full md:w-[400px] p-5 border rounded cursor-pointer" >
+                    <div className="newsCard w-full  p-5 border rounded cursor-pointer" >
                       <div className="w-full h-[250px]">
                         <img src={urlFor(n.mainImage)} alt={n.title} className="w-full h-full rounded-t object-cover" />
                       </div>

@@ -1,7 +1,10 @@
 import React from 'react'
 import Head from 'next/head'
 
-const contact = () => {
+import {client} from '../lib/client'
+
+
+const contact = ({contacts}) => {
   return (
     <>
       <Head>
@@ -22,56 +25,15 @@ const contact = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr className="h-14 border-b">
-                  <td className="w-1/5 pl-4">Australia</td>
-                  <td className="w-2/5">Vijendra Vijayaratnam</td>
-                  <td className="w-2/5">vijendra@sjc87scholarship.org</td>
-                </tr>
-                <tr className="h-14 border-b">
-                  <td className="w-1/5 pl-4">Canada</td>
-                  <td className="w-2/5">Mithilan Thavarasalingam</td>
-                  <td className="w-2/5">m.thava@sjc87scholarship.org</td>
-                </tr>
-                <tr className="h-14 border-b">
-                  <td className="w-1/5 pl-4"></td>
-                  <td className="w-2/5">Dhanushan Balarajah</td>
-                  <td className="w-2/5">d.balarajah@sjc87scholarship.org</td>
-                </tr>
-                <tr className="h-14 border-b">
-                  <td className="w-1/5 pl-4">Sri Lanka</td>
-                  <td className="w-2/5">Brain Thamboo</td>
-                  <td className="w-2/5">thambo@sjc87scholarship.org</td>
-                </tr>
-                <tr className="h-14 border-b">
-                  <td className="w-1/5 pl-4"></td>
-                  <td className="w-2/5">Rajan Niles</td>
-                  <td className="w-2/5">r.niles@sjc87scholarship.org</td>
-                </tr>
-                <tr className="h-14 border-b">
-                  <td className="w-1/5 pl-4"></td>
-                  <td className="w-2/5">Vageesan Alalasundaram</td>
-                  <td className="w-2/5">vageesan@sjc87scholarship.org</td>
-                </tr>
-                <tr className="h-14 border-b">
-                  <td className="w-1/5 pl-4"></td>
-                  <td className="w-2/5">Dekala Murugesu</td>
-                  <td className="w-2/5"></td>
-                </tr>
-                <tr className="h-14 border-b">
-                  <td className="w-1/5 pl-4">UK</td>
-                  <td className="w-2/5">Sudarshan Thurairatnam</td>
-                  <td className="w-2/5">Suda@sjc87scholarship.org</td>
-                </tr>
-                <tr className="h-14 border-b">
-                  <td className="w-1/5 pl-4">USA</td>
-                  <td className="w-2/5">Ananda Kumar</td>
-                  <td className="w-2/5">s.ananthakumar@sjc87scholarship.org</td>
-                </tr>
-                <tr className="h-14 border-b">
-                  <td className="w-1/5 pl-4"></td>
-                  <td className="w-2/5">Jehan Canagarajah</td>
-                  <td className="w-2/5">j.canagarajah@sjc87scholarship.org</td>
-                </tr>
+                {
+                  contacts.map(c=>(
+                    <tr className="h-14 border-b" key={c._id}>
+                      <td className="w-1/5 pl-4">{c.country}</td>
+                      <td className="w-2/5">{c.name}</td>
+                      <td className="w-2/5">{c.email}</td>
+                    </tr>
+                  ))
+                }
               </tbody>
             </table>
           </div>
@@ -101,3 +63,14 @@ const contact = () => {
 }
 
 export default contact
+
+export const getServerSideProps = async () => {
+  const contactQuery = `
+  *[_type=='contact'] | order(country asc)
+  `
+  const contacts = await client.fetch(contactQuery)
+  console.log(contacts)
+  return {
+    props : {contacts}
+  }
+}

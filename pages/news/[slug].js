@@ -2,14 +2,35 @@ import React from 'react'
 import Link from 'next/link'
 import {client, urlFor} from '../../lib/client'
 import {NextSeo} from 'next-seo'
+import {PortableText} from '@portabletext/react'
+
+
+
 
 const NewsDetail = ({news, newsData}) => {
+  const ptComponents = {
+    types: {
+      image: ({ value }) => {
+        if (!value?.asset?._ref) {
+          return null
+        }
+        return (
+          <img
+            alt={value.alt || ' '}
+            loading="lazy"
+            src={urlFor(value).width(320).height(240).fit('max').auto('format')}
+          />
+        )
+      }
+    }
+  }
+  
   return (
     <div>
       <NextSeo
         title={news.title}
         titleTemplate='SJC87INITIATIVE | %s'
-        description="SJC87 INITIATIVE is not for profit Education Initiative was formed in 2009, mainly to improve the Education standard in the North and East of Sri Lanka. It operates with slightly different names in Australia, Canada, Sri Lanka, UK and USA."
+        description={news.metaDesc}
         canonical='https://sjc87initiative.com'
       />
       <main>
@@ -26,7 +47,12 @@ const NewsDetail = ({news, newsData}) => {
           <div className="w-full h-[600px] mb-5">
             <img src={urlFor(news.mainImage)} alt="Main Image" className="w-full h-full object-cover rounded" />
           </div>
-          <p className="w-full text-md md:text-xl font-light text-gray-600 mb-5">{news.text}</p>
+          <div className="w-full text-md md:text-xl font-light text-gray-600 mb-5">
+          <PortableText
+            value={news.content}
+            components={ptComponents}
+          />
+          </div>
           {/* Gallery */}
           <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5">
           {news.image &&
@@ -77,7 +103,9 @@ export const getStaticProps = async ({params: {slug}}) => {
     text,
     bannerImage,
     mainImage,
-    image
+    image,
+    content,
+    metaDesc
   }`
   const news = await client.fetch(query)
 

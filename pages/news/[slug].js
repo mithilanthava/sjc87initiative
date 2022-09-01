@@ -1,5 +1,4 @@
 import React from 'react'
-import { NextSeo } from 'next-seo';
 import Link from 'next/link'
 import {client, urlFor} from '../../lib/client'
 import {NextSeo} from 'next-seo'

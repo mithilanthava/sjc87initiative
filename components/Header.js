@@ -7,6 +7,31 @@ import '../styles/Home.module.css'
 
 const Header = () => {
   const [isOpen, setOpen] = useState(false)
+  const [isAboutOpen, setAboutOpen] = useState(false)
+  const [isActOpen, setActOpen] = useState(false)
+  const [isSponsorOpen, setSponsorOpen] = useState(false)
+  const [isProjectOpen, setProjectOpen] = useState(false)
+  const [isIctOpen, setIctOpen] = useState(false)
+
+  function toggleIct(){
+    setIctOpen(!isIctOpen)
+  }
+
+  function toggleProject(){
+    setProjectOpen(!isProjectOpen)
+  }
+
+  function toggleSponsor(){
+    setSponsorOpen(!isSponsorOpen)
+  }
+
+  function toggleAct(){
+    setActOpen(!isActOpen)
+  }
+
+  function toggleAbout() {
+    setAboutOpen(!isAboutOpen)
+  }
   function toggleHam(){
     setOpen(!isOpen)
   }
@@ -218,9 +243,171 @@ const Header = () => {
             }
           </div>
         </div>
-        <div className={isOpen ? "h-screen bg-white transition-all duration-500 border-gray-300 border-2 rounded" : " hidden -left-[100%] transition-all duration-500"}>
-            
+        <div className={isOpen ? "py-10 min-h-96 bg-white shadow-2xl transition-all duration-500 rounded overflow-auto " : " hidden -left-[100%] transition-all duration-500"}>
+          <div className="mobileLinks ml-5">
+            <ul className="">
+              <li className="py-3">
+                <Link href="/">
+                  <a>Home</a>
+                </Link>
+              </li>
+
+              {/* About Us */}
+              <li className="py-3 bg-white transition duration-500" >
+                <a onClick={toggleAbout}>About Us &darr;</a>
+                <ul className={isAboutOpen ? "ml-5 mt-3 transition duration-200" : "hidden"}>
+                  <li className="py-3">
+                    <Link href="/aboutUs">About Us</Link>
+                  </li>
+                  <li className="py-3">
+                    <Link href="/aboutUs/ourStory">Our Story</Link>
+                  </li>
+                  <li className="py-3">
+                    <Link href="/aboutUs/missionVisionValues">Mission Vision and Values</Link>
+                  </li>
+                  <li className="py-3">
+                    <Link href="/aboutUs/orgStructure">Organizational Structure</Link>
+                  </li>
+                </ul>
+              </li>
+              
+              {/* Activities */}
+              <li className="py-3 bg-white overflow-auto" >
+                <a onClick={toggleAct}>Activities &darr;</a>
+                <ul className={isActOpen ? "ml-5 mt-3 transition duration-200" : "hidden"}>
+                  <li className="py-3">
+                    <Link href="/Activities">Activities</Link>
+                  </li>
+
+                  {/* Sponsorship */}
+                  <li className="py-3 bg-white" >
+                    <Link href="/aboutUs/ourStory">
+                      <a onClick={toggleSponsor}>Sponsorship &darr;</a>
+                    </Link>
+                    <ul className={isSponsorOpen ? "ml-5 mt-3" : "hidden"}>
+                      <li className="py-3">
+                        <Link href="/activities/sponsorship/schoolStudentsOrdinary">School Students up to GCE Ordinary Level</Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/sponsorship/schoolStudentsAdvance">School Students in GCE Advance Level</Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/sponsorship/universityStudents">University Students</Link>
+                      </li>
+                    </ul>
+                  </li>
+
+                  {/* School / Zonal Projects */}
+                  <li className="py-3 bg-white" >
+                    <Link href="/aboutUs/ourStory">
+                      <a onClick={toggleProject}>School/Zonal Projects &darr;</a>
+                    </Link>
+                    <ul className={isProjectOpen ? "ml-5 mt-3" : "hidden"}>
+                      <li className="py-3">
+                        <Link href="/activities/schoolProjects/primaryEducation">
+                          <a>Primary Education</a>
+                        </Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/schoolProjects/englishLanguageProficiency">
+                          <a>English Language Proficienty</a>
+                        </Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/schoolProjects/grade5ScholarshipRevisionClasses">
+                          <a>Grade 5 Scholarship Revisions Classes</a>
+                        </Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/schoolProjects/gceExamPreparationClasses">
+                          <a>GCE O/L Exam Preparation Classes</a>
+                        </Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/schoolProjects/sports">
+                          <a>Co Curricular Activities - Sports</a>
+                        </Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/schoolProjects/musicDramaDance">
+                          <a>Co-Curricular Activities – Music / Drama / Dance</a>
+                        </Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/schoolProjects/educationalTours">
+                          <a>Educational Tours</a>
+                        </Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/schoolProjects/prizeDay">
+                          <a>Prize Day</a>
+                        </Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/schoolProjects/infrastructure">
+                          <a>Infrastructure</a>
+                        </Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/schoolProjects/healthAndEnvironment">
+                          <a>Health and Environment</a>
+                        </Link>
+                      </li>
+                      
+                    </ul>
+                  </li>
+
+                  {/* Ict Projects */}
+                  <li className="py-3 bg-white" >
+                    <Link href="/aboutUs/ourStory">
+                      <a onClick={toggleIct}>Ict Projects &darr;</a>
+                    </Link>
+                    <ul className={isIctOpen ? "ml-5 mt-3" : "hidden"}>
+                      <li className="py-3">
+                        <Link href="/activities/ictProjects/facilitiesToSchools">
+                          <a>Ict Facilities to Schools</a>
+                        </Link>
+                      </li>
+                      <li className="py-3">
+                        <Link href="/activities/ictProjects/workshopAndSeminar">
+                          <a>Workshop and Seminar</a>
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li className="py-3 bg-white">
+                    <Link href="/activities/specialNeeds">Special Needs</Link>
+                  </li>
+                  <li className="py-3 bg-white">
+                    <Link href="/activities/covid19Relief">Covid 19 Relief</Link>
+                  </li>
+                </ul>
+              </li>
+
+              <li className="py-3 ">
+                <Link href="/ourImpact">
+                  <a>Our Impact</a>
+                </Link>
+              </li>
+              <li className="py-3 ">
+                <Link href="/donation">
+                  <a>Donation</a>
+                </Link>
+              </li>
+              <li className="py-3 ">
+                <Link href="/news">
+                  <a>News</a>
+                </Link>
+              </li>
+              <li className="py-3 ">
+                <Link href="/contact">
+                  <a>Contact</a>
+                </Link>
+              </li>
+            </ul>
           </div>
+        </div>
       </div>
     </>
   )

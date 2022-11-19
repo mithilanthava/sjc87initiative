@@ -2,7 +2,9 @@ import React from 'react'
 import Link from 'next/link'
 import {client, urlFor} from '../../lib/client'
 import {NextSeo} from 'next-seo'
-import {PortableText} from '@portabletext/react'
+// import {PortableText} from '@portabletext/react'
+import PortableText from 'react-portable-text'
+import { children } from 'dom7'
 
 
 
@@ -22,7 +24,8 @@ const NewsDetail = ({news, newsData}) => {
           />
         )
       }
-    }
+    },
+    
   }
   
   return (
@@ -49,8 +52,20 @@ const NewsDetail = ({news, newsData}) => {
           </div>
           <div className="w-full text-md md:text-xl font-light text-gray-600 mb-5">
           <PortableText
-            value={news.content}
-            components={ptComponents}
+            dataset={process.env.NEXT_PUBLIC_SANITY_DATASET}
+            projectId={process.env.NEXT_PUBLIC_SANITY_PROJECT_ID}
+            content={news.content}
+            serializers={{
+              h1:(props) => <h1 className='text-4xl font-bold text-gray-800 my-5'{...props} />,
+              h2:(props) => <h2 className='text-3xl font-semibold text-gray-800 my-5'{...props} />,
+              h3:(props) => <h3 className='text-xl font-semibold text-gray-800 my-5'{...props} />,
+              h4:(props) => <h4 className='text-xl font-semibold text-gray-800 my-5'{...props} />,
+              h5:(props) => <h5 className='text-md font-semibold text-gray-800 my-5'{...props} />,
+              h6:(props) => <h6 className='text-md font-semibold text-gray-800 my-5'{...props} />,
+              li: ({children}) => <li className='ml-10 list-disc pb-2'>{children}</li>,
+              normal: (props) => <p className='mb-5 text-gray-700' {...props}/>
+
+            }}
           />
           </div>
           {/* Gallery */}

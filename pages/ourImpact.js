@@ -36,9 +36,9 @@ const ourImpact = () => {
                 <AiOutlineDollar />
               </div>
               <div className="desc mt-5">
-                <p className="text-xl md:text-2xl font-semibold text-gray-600">LKR 200 Million</p>
+                <p className="text-xl md:text-2xl font-semibold text-gray-600">LKR 300 Million</p>
                 <span className="font-extrabold text-orange-500 text-xl">Money Raised</span>
-                <p className="text-2xl md:text-6xl font-extrabold text-gray-600">&#60;3%</p>
+                <p className="text-2xl md:text-6xl font-extrabold text-gray-600">&#60;2%</p>
                 <p className="font-extrabold text-orange-500 text-xl">Admin Charges</p>
               </div>
             </div>
@@ -47,9 +47,9 @@ const ourImpact = () => {
                 <AiOutlineFlag />
               </div>
               <div className="desc mt-5">
-                <p className="text-xl md:text-2xl font-semibold text-gray-600">12</p>
+                <p className="text-xl md:text-2xl font-semibold text-gray-600">14</p>
                 <span className="font-extrabold text-orange-500 text-xl">Years on Ground</span>
-                <p className="text-2xl md:text-6xl font-extrabold text-gray-600">250+</p>
+                <p className="text-2xl md:text-6xl font-extrabold text-gray-600">300+</p>
                 <p className="font-extrabold text-orange-500 text-xl">Projects Funded</p>
               </div>
             </div>
@@ -59,8 +59,8 @@ const ourImpact = () => {
               </div>
               <div className="desc mt-5">
                 <p className="text-xl md:text-2xl font-semibold text-gray-600">50,000+</p>
-                <span className="font-extrabold text-orange-500 text-xl">Benifited</span>
-                <p className="text-2xl md:text-6xl font-extrabold text-gray-600">1500+</p>
+                <span className="font-extrabold text-orange-500 text-xl">Benefited</span>
+                <p className="text-2xl md:text-6xl font-extrabold text-gray-600">1750+</p>
                 <p className="font-extrabold text-orange-500 text-xl">Students Sponsorship</p>
               </div>
             </div>
@@ -69,8 +69,8 @@ const ourImpact = () => {
                 <CgTrees />
               </div>
               <div className="desc mt-5">
-                <p className="text-xl md:text-2xl font-semibold text-gray-600">15+</p>
-                <span className="text-xl md:text-2xl font-extrabold text-orange-500">13 North | 2 East</span>
+                <p className="text-xl md:text-2xl font-semibold text-gray-600">17+</p>
+                <span className="text-xl md:text-2xl font-extrabold text-orange-500">13 North | 2 East | 2 Central</span>
                 <p className="text-2xl md:text-6xl font-extrabold text-gray-600">Zones</p>
                 <p className="font-extrabold text-orange-500 text-xl">Community Served</p>
               </div>

@@ -117,7 +117,7 @@ const donation = () => {
                 MAIL A CHEQUE (payable to COMMUNITY HELP FOR SCHOOL KIDS
                 INITIATIVE INC):{" "}
               </span>
-              26A ANNIS ROAD, TORONTO, ONTARIO M1M2Y7
+              11 Progress Avenue, Suite 202, Toronto, Ontario M1P 4S7
             </p>
             <p className="text-gray-600 font-bold text-xl md:text-2xl mt-5">
               DEPOSIT AT OUR BANK:

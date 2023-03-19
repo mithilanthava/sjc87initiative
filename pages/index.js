@@ -64,7 +64,7 @@ export default function Home() {
 
         {/* Info about the school after the banner */}
         <div className="info py-5 container">
-          <p className="text-center text-xl font-semibold text-gray-500 w-full md:w-3/4 mx-auto">SJC87 INITIATIVE was formed in 2009, with the intention of improving the standard of Education in the North and East of Sri Lanka</p>
+          <p className="text-center text-xl font-semibold text-gray-500 w-full md:w-3/4 mx-auto">SJC87 INITIATIVE was formed in 2009, with the intention of improving the standard of Education in the under resourced areas of Sri Lanka</p>
         </div>
 
         {/* The main container of the contets */}

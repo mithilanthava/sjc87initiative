@@ -45,6 +45,9 @@ const donation = () => {
             <h4 className="text-xl md:text-2xl text-gray-500 font-bold">
               Non Profit
             </h4>
+            <h4 className="text-xl md:text-2xl text-gray-500 font-semibold">
+            Incorporation Number  INC9892583
+            </h4>
           </div>
           <div className="col-span-2">
             <p className="text-xl md:text-2xl text-gray-500 mb-5">
@@ -60,10 +63,7 @@ const donation = () => {
               <span className="text-gray-600 font-bold text-xl md:text-2xl">
                 Account number:
               </span>
-              Please check with{" "}
-              <a href="mailto:contact@sjc87scholarship.org">
-                contact@sjc87scholarship.org
-              </a>
+              1030 0007
             </p>
 
             <p className="text-xl md:text-2xl text-gray-500">
@@ -96,6 +96,7 @@ const donation = () => {
             <h4 className="text-xl md:text-2xl text-gray-500 font-bold">
               Non Profit
             </h4>
+            <h4 className="text-xl md:text-2xl text-gray-500 font-semibold">Incorporation Number  1987147</h4>
           </div>
           <div className="col-span-2">
             <p className="text-xl md:text-2xl text-gray-500">
@@ -117,7 +118,7 @@ const donation = () => {
                 MAIL A CHEQUE (payable to COMMUNITY HELP FOR SCHOOL KIDS
                 INITIATIVE INC):{" "}
               </span>
-              11 Progress Avenue, Suite 202, Toronto, Ontario M1P 4S7
+              11 Progress Avenue, Suite 202, Toronto, Ontario M1P 4S7npm 
             </p>
             <p className="text-gray-600 font-bold text-xl md:text-2xl mt-5">
               DEPOSIT AT OUR BANK:
@@ -155,6 +156,7 @@ const donation = () => {
             <h4 className="text-xl md:text-2xl text-gray-500 font-bold">
               Trust
             </h4>
+            <h4 className="text-xl md:text-2xl text-gray-500 font-semibold">Deed of Trust No 6184</h4>
           </div>
           <div className="col-span-2">
             <p className="text-xl md:text-2xl text-gray-500">
@@ -203,6 +205,7 @@ const donation = () => {
             <h4 className="text-xl md:text-2xl text-gray-500 font-bold">
               Registered Charity <span className="text-sm">tax deductible</span>
             </h4>
+            <h3 className="text-xl md:text-2xl text-gray-500 font-semibold">Charity Registration Number 1191947</h3>
           </div>
           <div className="col-span-2">
             <p className="text-xl md:text-2xl text-gray-500">
@@ -216,16 +219,13 @@ const donation = () => {
               <span className="text-gray-600 font-bold text-xl md:text-2xl">
                 Account number:{" "}
               </span>
-              Please check with{" "}
-              <a href="mailto:contact@sjc87scholarship.org">
-                contact@sjc87scholarship.org
-              </a>
+              71759647
             </p>
             <p className="text-xl md:text-2xl text-gray-500">
               <span className="text-gray-600 font-bold text-xl md:text-2xl">
                 Sort Code:{" "}
               </span>
-              xxxxxx
+              40-09-07
             </p>
             <p className="text-xl md:text-2xl text-gray-500">
               <span className="text-gray-600 font-bold text-xl md:text-2xl">
@@ -251,6 +251,7 @@ const donation = () => {
             <h4 className="text-xl md:text-2xl text-gray-500 font-bold">
               Registered Charity 501 (c) (3)
             </h4>
+            <h3 className="text-xl md:text-2xl text-gray-500 font-semibold">EIN: 46-4212141</h3>
             <Link href="https://www.paypal.com/donate/?hosted_button_id=Z938BSFCMRHC2">
               <a className="text-xl md:text-2xl text-orange-500 font-semibold underline">
                 Donate with Paypal

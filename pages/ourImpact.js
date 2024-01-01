@@ -36,7 +36,7 @@ const ourImpact = () => {
                 <AiOutlineDollar />
               </div>
               <div className="desc mt-5">
-                <p className="text-xl md:text-2xl font-semibold text-gray-600">LKR 300 Million</p>
+                <p className="text-xl md:text-2xl font-semibold text-gray-600">LKR 420 Million</p>
                 <span className="font-extrabold text-orange-500 text-xl">Money Raised</span>
                 <p className="text-2xl md:text-6xl font-extrabold text-gray-600">&#60;2%</p>
                 <p className="font-extrabold text-orange-500 text-xl">Admin Charges</p>
@@ -47,7 +47,7 @@ const ourImpact = () => {
                 <AiOutlineFlag />
               </div>
               <div className="desc mt-5">
-                <p className="text-xl md:text-2xl font-semibold text-gray-600">14</p>
+                <p className="text-xl md:text-2xl font-semibold text-gray-600">15</p>
                 <span className="font-extrabold text-orange-500 text-xl">Years on Ground</span>
                 <p className="text-2xl md:text-6xl font-extrabold text-gray-600">300+</p>
                 <p className="font-extrabold text-orange-500 text-xl">Projects Funded</p>
@@ -60,7 +60,7 @@ const ourImpact = () => {
               <div className="desc mt-5">
                 <p className="text-xl md:text-2xl font-semibold text-gray-600">50,000+</p>
                 <span className="font-extrabold text-orange-500 text-xl">Benefited</span>
-                <p className="text-2xl md:text-6xl font-extrabold text-gray-600">1750+</p>
+                <p className="text-2xl md:text-6xl font-extrabold text-gray-600">2000+</p>
                 <p className="font-extrabold text-orange-500 text-xl">Students Sponsorship</p>
               </div>
             </div>

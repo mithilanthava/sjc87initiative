@@ -35,7 +35,7 @@ const universityStudents = () => {
           <div className="text-center my-16">
             <h2 className='text-2xl md:text-4xl xl:text-6xl font-extrabold text-orange-500 mb-5'>University Students</h2>
             <p className="text-xl md:text-2xl text-gray-500 font-light">This sponsorship is offered to the students from rural areas who are  going to Universities located in the Urban areas. These scholarships generally cover living expenses away from home for these students.</p>
-            <p className="text-xl md:text-2xl text-gray-500 font-light">Annual Sponsorship amounts are AUD$500/CAD$500/GBP 300/ USD 400. These sponsorships will be for the period of the Course chosen, majority of them are for 4 years.</p>
+            <p className="text-xl md:text-2xl text-gray-500 font-light">Annual Sponsorship amounts are AUD$550/CAD$500/GBP 300/ USD 400. These sponsorships will be for the period of the Course chosen, majority of them are for 4 years.</p>
           </div>
 
           {/* Image Gallery  */}

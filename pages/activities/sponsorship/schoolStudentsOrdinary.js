@@ -37,7 +37,7 @@ const schoolStudentsOrdinary = () => {
           <div className="text-center my-16">
             <h2 className='text-2xl md:text-4xl xl:text-6xl font-extrabold text-orange-500 mb-5'>School Students up to GCE Ordinary Level</h2>
             <p className="text-xl md:text-2xl text-gray-500 font-light">Sponsorships may start at any stage from Grade 1 to GCE O/L. The family situation is the main criteria for the selection. </p>
-            <p className="text-xl md:text-2xl text-gray-500 font-light">Annual Sponsorship amounts are AUD$300 / CAD$300 / GBP 180 / USD 250.</p>
+            <p className="text-xl md:text-2xl text-gray-500 font-light">Annual Sponsorship amounts are AUD$350 / CAD$300 / GBP 180 / USD 250.</p>
             <p className="text-xl md:text-2xl text-gray-500 font-light">Students from these sponsorships are automatically carried over to the GCE Advanced Level Scholarships..</p>
           </div>
 

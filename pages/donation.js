@@ -40,7 +40,7 @@ const donation = () => {
         <div className="mt-10 grid grid-cols-1 md:grid-cols-3 mb-10">
           <div className="country text-left md:text-right mr-16 mb-8 md:mb-0">
             <h3 className="text-2xl md:text-4xl text-orange-500 font-extrabold">
-              Austraila
+              Australia
             </h3>
             <h4 className="text-xl md:text-2xl text-gray-500 font-bold">
               Non Profit

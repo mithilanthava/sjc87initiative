@@ -35,7 +35,7 @@ const schoolStudentsAdvance = () => {
           <div className="text-center my-16">
             <h2 className='text-2xl md:text-4xl xl:text-6xl font-extrabold text-orange-500 mb-5'>School students in GCE Advanced Level</h2>
             <p className="text-xl md:text-2xl text-gray-500 font-light">Sponsorship is offered to the ones chosen from the pool of students who have  just completed the GCE O/L and wishing to enroll in Science or Technology streams in the GCE A/L. The above streams are selected considering better job opportunities for these streams. </p>
-            <p className="text-xl md:text-2xl text-gray-500 font-light">Annual Sponsorship amounts are AUD$450 / CAD$400  /GBP 240 / USD 300. These start every July and will be for a period of Two years only</p>
+            <p className="text-xl md:text-2xl text-gray-500 font-light">Annual Sponsorship amounts are AUD$500 / CAD$450  /GBP 260 / USD 325. These start every July and will be for a period of Two years only</p>
           </div>
 
           {/* Image Gallery  */}
